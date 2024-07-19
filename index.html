@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr.Pasiya</title>
+    <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.png">
+    <link rel="stylesheet" href="/Css/style.css">
+    <script src="https://kit.fontawesome.com/189fecdd3d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- -----------------home----------------- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/assets/logos/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Student at Rajarata Univercity SriLanka</p>
+                <h1>Hi, I'm <span>Pasidu</span><br>Sachintha From SriLanka</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------about----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/assets/personal/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm an undergraduate BICT student at Rajarata University in Sri Lanka right now. continually
+                        picking up new knowledge and improving my skills to become an excellent developer and designer.
+                        In addition to my studies, I self-study, construct, and test both new and old items. And I work as a Director and Web Developer at <a href="https://www.wrenix.com/" class="wrenix">Wrenix</a> right now.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>POS System Development</span><br>Building POS Systems</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br>Director and Web Developer <a
+                                    href="https://www.wrenix.com/" class="wrenix">Wrenix</a></li>
+                            <li><span>2022-2023</span><br>Manager at Ashoka Store PVT</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>BICT from RUSL(Under Graduate)</li>
+                            <li><span>2022</span><br>SE Training from IJSE</li>
+                            <li><span>2022</span><br>English Training at British Council</li>
+                            <li><span>2021</span><br>Three Bs from Technology Streem</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------services----------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Description</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Description</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-file-post-fill" viewBox="0 0 16 16" style="margin-bottom: 30px;">
+                        <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M4.5 3h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1m0 2h7a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-8a.5.5 0 0 1 .5-.5"/>
+                      </svg>
+                    <h2>POS System Design</h2>
+                    <p>Description</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------portfolio----------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/assets/projects/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media app</h3>
+                        <p>Description about app</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/assets/projects/work-2.png">
+                    <div class="layer">
+                        <h3>music App</h3>
+                        <p>Description about app</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/assets/projects/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping Appp</h3>
+                        <p>Description about app</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="button">See more</a>
+        </div>
+    </div>
+    <!-- -----------------contact----------------- -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>contactme@example.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>+94 70 213 7000</p>
+                    <div class="social-icons">
+                        <a href="https://web.facebook.com/pasidu.sachintha.1/" class="facebook"> <i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/MrPasiya0" class="twitter"> <i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.instagram.com/mr.pasiya_a/" class="insta"><i class="fa fa-instagram instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/pasidu-sachintha-982448288/" class="linkedin"> <i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Pasidu09-SL" class="github"> <i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="#" download class="button button2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form >
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <input type="text" name="Subject" placeholder="Subject">
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="button button2" onclick="click()">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <img src="/assets/favicon.png">
+            <p class="copyright">copyright Made by Pasiya © 2024</p>
+        </footer>
+     </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        var sidem = document.getElementById("sidemenu")
+
+        const msg = document.getElementById("msg")
+        function click(){
+            msg.innerHTML = "Message Submit Successful"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        }
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        function openmenu(){
+            sidem.style.right = "0";
+        }
+        function closemenu(){
+            sidem.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
