@@ -7,7 +7,7 @@
     <meta name="description" content="Designing the future">
     <meta name="author" content="Mr.Pasiya">
     <meta property="og:title" content="Mr.Pasiya">
-    <meta property="og:description" content="Create & market with IT Experts">
+    <meta property="og:description" content="Designing the future">
     <meta property="og:author" content="Mr.Pasiya">
     <meta property="og:image" content="/assets/icon/favicon.png">
 
@@ -23,24 +23,31 @@
     <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
 </head>
 
-<body>
+<body data-theme="dark">
     <!-- -----------------home----------------- -->
     <div id="header">
         <div class="container">
             <nav>
-                <img src="/assets/logos/Logo.webp" class="logo">
+                <img id="logo" src="/assets/logos/Logo.webp" class="logo">
                 <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#header" style="--i:1">Home</a></li>
+                    <li><a href="#about" style="--i:2">About</a></li>
+                    <li><a href="#my-skills" style="--i:3">My Skills</a></li>
+                    <li><a href="#services" style="--i:4">Services</a></li>
+                    <li><a href="#portfolio" style="--i:5">Portfolio</a></li>
+                    <li><a href="#blogs" style="--i:6">Blogs</a></li>
+                    <li><a href="#contact" style="--i:7">Contact me</a></li>
                     <i class="fas fa-solid fa-x" onclick="closemenu()"></i>
+                    <button id="theme-toggle" class="theme"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                        fill="currentColor" class="bi bi-brightness-high" alt="switch theme" viewBox="0 0 16 16">
+                        <path
+                            d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+                    </svg></button>
                 </ul>
                 <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Student at Rajarata Univercity SriLanka</p>
+                <p>I'm a <span id="element"></span></p>
                 <h1>Hi, I'm <span>Pasidu</span><br>Sachintha From SriLanka</h1>
             </div>
         </div>
@@ -50,14 +57,15 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="/assets/personal/user.webp">
+                    <img src="/assets/personal/user.jpeg" class="slide-in-left">
                 </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
+                <div class="about-col-2 ">
+                    <h1 class="sub-title bounce">About Me</h1>
                     <p>I'm an undergraduate BICT student at Rajarata University in Sri Lanka right now. continually
                         picking up new knowledge and improving my skills to become an excellent developer and designer.
                         In addition to my studies, I self-study, construct, and test both new and old items. And I work
-                        as a Director and Web Developer at <a href="https://www.wrenix.com/" class="wrenix">Wrenix</a>
+                        as a Director and Web Developer at <a href="https://www.wrenix.com/" class="wrenix"
+                            target="_blank">Wrenix</a>
                         right now.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -73,8 +81,8 @@
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2024 - Current</span><br>Director and Web Developer <a
-                                    href="https://www.wrenix.com/" class="wrenix">Wrenix</a></li>
+                            <li><span>2024 - Current</span><br>Director and Web Developer at <a
+                                    href="https://www.wrenix.com/" class="wrenix" target="_blank">Wrenix</a></li>
                             <li><span>2022-2023</span><br>Manager at Ashoka Store PVT</li>
                         </ul>
                     </div>
@@ -90,22 +98,112 @@
             </div>
         </div>
     </div>
+    <!-- -----------------my skills----------------- -->
+    <div id="my-skills">
+        <h1 class="sub-title bounce" onload="loadSkills()">My Skills</h1>
+        <section>
+            <div class="container1">
+                <h1 class="heading">Technical skills</h1>
+                <div class="technical-bars">
+                    <div class="bar"><i class="fa-brands fa-html5" style="color:#c95d2e"></i>
+                        <div class="info"><span>HTML</span></div>
+                        <div class="progrss-line html">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="technical-bars">
+                    <div class="bar"><i class="fa-brands fa-css3-alt" style="color:#147bbc"></i>
+                        <div class="info"><span>CSS</span></div>
+                        <div class="progrss-line css">
+                            <span></span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="technical-bars">
+                    <div class="bar"><i class="fa-brands fa-js" style="color:#b0bc1e"></i>
+                        <div class="info"><span>Java Script</span></div>
+                        <div class="progrss-line js">
+                            <span></span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="technical-bars">
+                    <div class="bar"><i class="fa-brands fa-java" style="color:#5382a1"></i>
+                        <div class="info"><span>Java</span></div>
+                        <div class="progrss-line java">
+                            <span></span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="technical-bars">
+                    <div class="bar"><i class="fa-brands fa-python " style="color:#147bbc"></i>
+                        <div class="info"><span>Python</span></div>
+                        <div class="progrss-line python">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container2">
+                <h1 class="heading">Professional Skills</h1>
+                <div class="radial-bars">
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">70%</div>
+                        <div class="text">Creativity</div>
+                    </div>
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">65%</div>
+                        <div class="text">Communication</div>
+                    </div>
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">40%</div>
+                        <div class="text">Problem Solving</div>
+                    </div>
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">90%</div>
+                        <div class="text">Teamwork</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
     <!-- -----------------services----------------- -->
     <div id="services">
         <div class="container">
-            <h1 class="sub-title">My Services</h1>
+            <h1 class="sub-title bounce">My Services</h1>
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Design</h2>
-                    <p>Description</p>
-                    <a href="#">Learn more</a>
+                    <p>Web design focuses on creating visually appealing and functional websites</p>
+                    <a href="#services">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-crop-simple"></i>
                     <h2>UI/UX Design</h2>
-                    <p>Description</p>
-                    <a href="#">Learn more</a>
+                    <p>UI/UX design enhances user experience through intuitive interfaces</p>
+                    <a href="#services">Learn more</a>
                 </div>
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
@@ -114,8 +212,9 @@
                             d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M4.5 3h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1m0 2h7a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-8a.5.5 0 0 1 .5-.5" />
                     </svg>
                     <h2>POS System Design</h2>
-                    <p>Description</p>
-                    <a href="#">Learn more</a>
+                    <p>POS system design optimizes retail operations with user-friendly, efficient checkout solutions.
+                    </p>
+                    <a href="#services">Learn more</a>
                 </div>
             </div>
         </div>
@@ -124,34 +223,36 @@
     <!-- -----------------portfolio----------- -->
     <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">My Work</h1>
+            <h1 class="sub-title bounce">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="/assets/projects/work-1.webp">
+                    <img src="/assets/projects/lost-and-found.jpg">
                     <div class="layer">
-                        <h3>Social Media app</h3>
-                        <p>Description about app</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Lost & Found System</h3>
+                        <p>This platform aims to streamline the process of reporting,
+                            searching, and recovering lost items, reducing the manual effort and errors associated with
+                            traditional methods. By leveraging modern web technologies.It's still developing.</p>
+                        <a href="#portfolio"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="/assets/projects/work-2.webp">
+                    <img src="/assets/projects/pos-system1.jpg">
                     <div class="layer">
-                        <h3>music App</h3>
-                        <p>Description about app</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Training Cost Calculator</h3>
+                        <p>This POS System is used to monitor client training and determine costs.</p>
+                        <a href="#portfolio"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="/assets/projects/work-3.webp">
+                    <img src="/assets/projects/pos-system2.jpg">
                     <div class="layer">
-                        <h3>Online Shopping Appp</h3>
-                        <p>Description about app</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Store Billing System</h3>
+                        <p>This is a store's POS billing system.It's still developing.</p>
+                        <a href="#portfolio"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
-            <a href="#" class="button">See more</a>
+            <a href="#portfolio" class="button">See more <i class="fa-solid fa-eye"></i></a>
         </div>
     </div>
     <!-- -----------------contact----------------- -->
@@ -159,70 +260,88 @@
         <div class="container">
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>contactme@example.com</p>
-                    <p><i class="fa-solid fa-phone-volume"></i>+94 70 213 7000</p>
+                    <h1 class="sub-title bounce">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane pulse"></i>contactme@example.com</p>
+                    <p><i class="fa-solid fa-phone-volume pulse"></i>+94 70 213 7000</p>
                     <div class="social-icons">
-                        <a href="https://web.facebook.com/pasidu.sachintha.1/" class="facebook"> <i
+                        <a href="https://web.facebook.com/pasidu.sachintha.1/" class="facebook" target="_blank"> <i
                                 class="fa-brands fa-facebook"></i></a>
-                        <a href="https://x.com/MrPasiya0" class="twitter"> <i
+                        <a href="https://x.com/MrPasiya0" class="twitter" target="_blank"> <i
                                 class="fa-brands fa-square-twitter"></i></a>
-                        <a href="https://www.instagram.com/mr.pasiya_a/" class="insta"><i
-                                class="fa fa-instagram instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/mr.pasiya_a/" class="insta" target="_blank"><i
+                                class="fa-brands fa-square-instagram instagram"></i></a>
                         <a href="https://www.linkedin.com/in/pasidu-sachintha-982448288/" class="linkedin"> <i
-                                class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/Pasidu09-SL" class="github"> <i
+                                class="fa-brands fa-linkedin" target="_blank"></i></a>
+                        <a href="https://github.com/Pasidu09-SL" class="github" target="_blank"> <i
                                 class="fa-brands fa-square-github"></i></a>
                     </div>
-                    <a href="/assets/personal/my-cv.pdf" download class="button button2">Download CV</a>
+                    <a href="/assets/personal/my-cv.pdf" download class="button">Download CV <i class="fa-solid fa-file"></i></a>
                 </div>
                 <div class="contact-right">
                     <form id="contact-form">
-                        <input type="text" name="Name" id="name" placeholder="Your Name" required>
-                        <input type="email" name="Email" id="email" placeholder="Your Email" required>
-                        <input type="text" name="Subject" id="subject" placeholder="Subject">
-                        <textarea name="Message" rows="6" id="message" placeholder="Your Message" required></textarea>
-                        <button type="submit" class="button button2 ">Submit</button>
+                        <i class="fa-solid fa-user" style="color: var(--icon)"></i> <input type="text" name="Name" id="name" placeholder="Your Name" required >
+                        <i class="fa-solid fa-envelope" style="color: var(--icon)"></i><input type="email" name="Email" id="email" placeholder="Your Email" required>
+                        <i class="fa-solid fa-highlighter" style="color: var(--icon)"></i><input type="text" name="Subject" id="subject" placeholder="Subject">
+                        <i class="fa-regular fa-file-lines" style="color: var(--icon)"></i><textarea name="Message" rows="6" id="message" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="button sub" onclick="restForm()">Submit <i class="fa-solid fa-paper-plane" style="font-size: 20px;"></i> </button>
                     </form>
                     <span id="msg"></span>
                 </div>
             </div>
         </div>
-        <footer>
-            <img src="/assets/icon/favicon.png">
-            <p class="copyright">copyright Made by Pasiya © 2024</p>
-        </footer>
     </div>
 
+    <footer>
+        <img src="/assets/icon/favicon.png">
+        <p class="copyright">copyright Made by Pasiya &copy; 2024</p>
+    </footer>
+    <a href="#header"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+            class="bi bi-arrow-up-square-fill up-arrow" viewBox="0 0 16 16">
+            <path
+                d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0" />
+        </svg></a>
+
     <script src="/js/script.js"></script>
+    <script src="/js/email.js"></script>
+
+    <!-- Load library from the CDN https://github.com/mattboldt/typed.js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+
+        var typed = new Typed('#element', {
+            strings: ['Student at Rajarata Univercity SriLanka', 'Director and Web Developer at <a href="https://www.wrenix.com/" target="_blank">Wrenix</a>'],
+            typeSpeed: 50,
+            backSpeed: 50,
+            backDelay: 1500,
+            loop: true
+        });
+
+        let switchTheme = document.getElementById("theme-toggle");
+        let imageColor = document.querySelectorAll(".theme")
+        let logo = document.getElementById("logo")
+
+        switchTheme.addEventListener('click', () => {
+
+            const currentTheme = document.body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            if (newTheme === 'light') {
+                logo.src = '/assets/logos/Light-Mode-logo.webp';
+            } else {
+                logo.src = '/assets/logos/Logo.webp';
+            }
+            imageColor.forEach(element => {
+                element.classList.toggle("theme")
+            });
+            document.body.setAttribute('data-theme', newTheme);
+        });
+    </script>
+
+    <!-- ----------Conecting Emailjs---------- -->
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
             emailjs.init("cT7HiVfepeiACZYll");
         })();
-    </script>
-    <script type="text/javascript">
-        document.getElementById('contact-form').addEventListener('submit', function (event) {
-            event.preventDefault();
-            const name = document.getElementById('name').value
-            const email = document.getElementById('email').value
-            const message = document.getElementById('message').value
-            const subject = document.getElementById('subject').value
-
-            const template = {
-                name:name,
-                email:email,
-                message:message,
-                subject:subject
-            }
-            emailjs.send('service_647f3ya', 'template_15puhbk', template)
-                .then(function () {
-                    console.log('Message sent successfully!');
-                }, function (error) {
-                    console.log('Failed to send message. Please try again.');
-                    console.log('FAILED...', error);
-                });
-        });
     </script>
 </body>
 
