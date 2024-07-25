@@ -46,7 +46,7 @@ Welcome to Mr.Pasiya's portfolio website. This site showcases Pasidu Sachintha's
    - Still under Developmnet
 
 7. **Contact**
-- Contact information and a form for users to send messages.
+   - Contact information and a form for users to send messages.
 
 ## Installation
    1. Clone the repository:
