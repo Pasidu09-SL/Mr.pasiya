@@ -15,7 +15,7 @@
     --layer:rgba(255, 255, 255, 0.6);
     --primary: yellow;
     --span:blue;
-    --bar:red;
+    --bar:rgb(234, 0, 255);
     --secondary: rgb(156, 161, 55);
     --background-image: url(/assets/background/Light-Mode-Background-img-desktop.webp);
     --background-image-mobile: url(/assets/background/Light-Mode-Background-img-mobile.webp);
@@ -87,6 +87,11 @@ body {
     100% {
         filter: hue-rotate(360deg);
     }
+}
+
+/* Optional: Style for the active state of the button */
+#toggleButton.active {
+    color: var(--bar);
 }
 
 /* =======================Fade In=================== */
@@ -480,11 +485,7 @@ section {
     transform-origin: left;
 }
 
-@keyframes animate {
-    100% {
-        transform: scaleX(1);
-    }
-}
+
 
 .technical-bars .bar .progrss-line span {
     height: 100%;
@@ -648,7 +649,11 @@ section {
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
 }
-
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
 @keyframes showText {
     100% {
         opacity: 1;
@@ -931,12 +936,10 @@ form textarea {
     background: #262626;
     padding: 15px;
     margin: 15px 0;
-    color: var(--text);
+    color: white;
     font-size: 18px;
     border-radius: 10px;
 }
-
-
 
 footer {
     display: flex;
@@ -984,6 +987,16 @@ footer img {
 }
 .theme {
     filter: invert(100%);
+}
+.mouse-ripple{
+    position: fixed;
+    font-size: 40px;
+    margin-left: 2%;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--text);
+    background-color: var(--background);
+    border: var(--background);
 }
 
 .theme:hover {
