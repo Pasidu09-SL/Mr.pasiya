@@ -69,4 +69,4 @@ Welcome to Mr.Pasiya's portfolio website. This site showcases Pasidu Sachintha's
 - This project is licensed under the MIT License - see the <a href="https://github.com/Pasidu09-SL/MrPasiya/blob/version-2.0/LICENSE">LICENSE</a> file for details.
 
 ## Contact
-- For any inquiries or feedback, you can reach out to Pasidu Sachintha at <a herf="#">contactme@example.com</a>contactme@example.com or connect through social media links provided on the website.
+- For any inquiries or feedback, you can reach out to Pasidu Sachintha at contactme@example.com or connect through social media links provided on the website.
