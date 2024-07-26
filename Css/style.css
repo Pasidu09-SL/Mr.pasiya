@@ -57,8 +57,8 @@ body {
 /* =======================Ripple=================== */
 .ripple {
     position: absolute;
-    width: 5px;
-    height: 5px;
+    width: 6px;
+    height: 6px;
     background: radial-gradient(circle, black, rgb(61, 61, 61), yellow, yellow, yellow, yellow, yellow, green);
     border-radius: 50%;
     pointer-events: none;
@@ -87,11 +87,6 @@ body {
     100% {
         filter: hue-rotate(360deg);
     }
-}
-
-/* Optional: Style for the active state of the button */
-#toggleButton.active {
-    color: var(--bar);
 }
 
 /* =======================Fade In=================== */
@@ -988,6 +983,12 @@ footer img {
 .theme {
     filter: invert(100%);
 }
+
+/* Optional: Style for the active state of the button */
+#toggleButton.active {
+    color: var(--bar);
+}
+
 .mouse-ripple{
     position: fixed;
     font-size: 40px;
@@ -997,6 +998,10 @@ footer img {
     color: var(--text);
     background-color: var(--background);
     border: var(--background);
+    transition: transform 0.5s;
+}
+.mouse-ripple:hover{
+    transform: translateY(-5px);
 }
 
 .theme:hover {
@@ -1056,6 +1061,9 @@ footer img {
         top: 25px;
         left: 25px;
         cursor: pointer;
+    }
+    .mouse-ripple{
+        display: none;
     }
     #theme-toggle{
         background-color:var(--span);
@@ -1189,7 +1197,9 @@ footer img {
     nav ul li {
         margin: 15px 0;
     }
-
+    .mouse-ripple{
+        display: none;
+    }
     .sub-title {
         font-size: 30px;
     }

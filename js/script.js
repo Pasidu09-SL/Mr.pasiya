@@ -27,7 +27,7 @@ function closemenu() {
 
 // =================Mose Movement Tracking For Ripple ================
 
-let rippleEnabled = true;
+let rippleEnabled = false;
 
 document.addEventListener('mousemove', function (e) {
     if (!rippleEnabled) return;
