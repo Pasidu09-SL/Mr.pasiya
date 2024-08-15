@@ -687,7 +687,7 @@ section {
 
 
 
-/* -----------------services---------------- */
+/* -----------------my services---------------- */
 #services {
     padding: 30px 0;
 }
@@ -727,10 +727,11 @@ section {
     font-size: 13px;
     margin-top: 20px;
     display: inline-block;
+    font-weight: 500;
 }
 
 .services-list div:hover{
-    background: linear-gradient(var(--layer), var(--primary));
+    background: linear-gradient(rgb(0 0 0 / 35%), var(--primary));
     transform: translateY(-10px);
     color: #080808;
 }
@@ -793,14 +794,20 @@ section {
     margin-top: 20px;
     color: var(--secondary);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 40px;
     line-height: 60px;
     background: white;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     text-align: center;
-
+    transition: transform 0.5s;
+}
+.layer a:last-child {
+    font-size: 18px;
+}
+.layer a:last-child:hover {
+    transform: translateY(-5px);
 }
 
 .work:hover img {
@@ -858,7 +865,7 @@ section {
 
 .social-icons a {
     text-decoration: none;
-    font-size: 30px;
+    font-size: 35px;
     margin-right: 15px;
     color: var(--icon);
     display: inline-block;
@@ -866,16 +873,14 @@ section {
 }
 
 .facebook:hover {
-    color: rgb(0, 100, 208);
+    color: rgb(42 102 255);;
     transform: translateY(-5px);
-    box-shadow: 0 0 20px rgb(0, 100, 208);
     border-radius: 51%;
 }
 
 .twitter:hover {
-    color: rgb(108, 179, 255);
+    color: rgb(48 119 181);;
     transform: translateY(-5px);
-    box-shadow: 0 0 20px rgb(108, 179, 255);
     border-radius: 6px;
 }
 
@@ -893,11 +898,30 @@ section {
     ;
 
     &:hover {
-        background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
-        background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+        /* background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF); */
+        background: radial-gradient(circle at 3% 89%, #FED373 18%, #F15245 39%, #D92E7F 66%, #9B36B7 87%, #515ECF);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        box-shadow: 0 0 20px yellow;
+        border-radius: 6px;
+        transform: translateY(-5px);
+    }
+}
+.figma {
+    cursor: pointer;
+    background: var(--icon);
+    -webkit-background-clip: text;
+    transition: transform 0.5s;
+
+    font {
+        size: 20vw;
+    }
+
+    ;
+
+    &:hover {
+        background: radial-gradient(circle at 33% 100%, #58cf83 35%, #a259ff 57%, #50bcfe 62%, #ee4e1f 85%, #f07262);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         border-radius: 6px;
         transform: translateY(-5px);
     }
@@ -906,15 +930,27 @@ section {
 .linkedin:hover {
     color: rgb(76, 163, 255);
     transform: translateY(-5px);
-    box-shadow: 0 0 20px rgb(76, 163, 255);
     border-radius: 6px;
 }
 
-.github:hover {
-    color: rgb(94, 0, 208);
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px rgb(94, 0, 208);
-    border-radius: 6px;
+.github{
+    cursor: pointer;
+    background: var(--icon);
+    -webkit-background-clip: text;
+    transition: transform 0.5s;
+
+    font {
+        size: 20vw;
+    }
+    ;
+
+    &:hover {
+        background: radial-gradient(circle at 56% 148%, #4c237c 38%, #6b2689 58%, #7c2c92 67%, #8f349e 81%, #a747b3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border-radius: 6px;
+        transform: translateY(-5px);
+    }
 }
 
 .contact-right form {

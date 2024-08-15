@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XCBR91ZFT0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-XCBR91ZFT0');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Designing the future">
@@ -12,15 +22,20 @@
     <meta property="og:image" content="/assets/icon/favicon.png">
     <meta property="og:url" content="https://mrpasiya.me">
     <meta property="og:type" content="website">
+    <meta name="keywords" content="Web Development, UI/UX Design, Portfolio, Developer, Sri Lanka">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://www.mrpasiya.me">
+    <link rel="canonical" href="https://mrpasiya.me">
 
     <title>Mr.Pasiya</title>
     <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.png">
     <link rel="stylesheet" href="/Css/style.css">
 
-    <script src="https://kit.fontawesome.com/189fecdd3d.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/189fecdd3d.js" crossorigin="anonymous" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+        defer></script>
 
     <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
 </head>
@@ -30,21 +45,22 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img id="logo" src="/assets/logos/Logo.webp" class="logo">
+                <img id="logo" src="/assets/logos/Logo.webp" class="logo" alt="Logo">
                 <ul id="sidemenu">
                     <li><a href="#header" style="--i:1">Home</a></li>
                     <li><a href="#about" style="--i:2">About</a></li>
                     <li><a href="#my-skills" style="--i:3">My Skills</a></li>
                     <li><a href="#services" style="--i:4">Services</a></li>
                     <li><a href="#portfolio" style="--i:5">Portfolio</a></li>
-                    <li><a href="#blogs" style="--i:6">Blogs</a></li>
+                    <li><a href="./pages/404.html" style="--i:6" target="_blank">Blogs</a></li>
                     <li><a href="#contact" style="--i:7">Contact me</a></li>
                     <i class="fas fa-solid fa-x" onclick="closemenu()"></i>
-                    <button id="theme-toggle" class="theme"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-                        fill="currentColor" class="bi bi-brightness-high" alt="switch theme" viewBox="0 0 16 16">
-                        <path
-                            d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
-                    </svg></button>
+                    <button id="theme-toggle" class="theme"><svg xmlns="http://www.w3.org/2000/svg" width="40"
+                            height="40" fill="currentColor" class="bi bi-brightness-high" alt="switch theme"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+                        </svg></button>
                     <button id="toggleButton" class="mouse-ripple"><i class="fa-solid fa-arrow-pointer"></i></button>
                 </ul>
                 <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
@@ -60,7 +76,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="/assets/personal/user.jpeg" class="slide-in-left">
+                    <img src="/assets/personal/user.jpeg" class="slide-in-left" alt="Picture of me">
                 </div>
                 <div class="about-col-2 ">
                     <h1 class="sub-title bounce">About Me</h1>
@@ -229,29 +245,37 @@
             <h1 class="sub-title bounce">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="/assets/projects/lost-and-found.jpg">
+                    <img src="/assets/projects/lost-and-found.jpg" alt="Lost & Found System">
                     <div class="layer">
                         <h3>Lost & Found System</h3>
                         <p>This platform aims to streamline the process of reporting,
                             searching, and recovering lost items, reducing the manual effort and errors associated with
                             traditional methods. By leveraging modern web technologies.It's still developing.</p>
-                        <a href="https://github.com/Pasidu09-SL/IFound-System" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/Pasidu09-SL/I_Found" class="github" target="_blank"> <i
+                                class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.figma.com/community/file/1405831772672732315/lost-found-system"
+                            class="figma" target="_blank"> <i class="fa-brands fa-figma"></i> </a>
+                        <!-- <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
                     </div>
                 </div>
                 <div class="work">
-                    <img src="/assets/projects/pos-system1.jpg">
+                    <img src="/assets/projects/pos-system1.jpg" alt="Training Cost Calculator">
                     <div class="layer">
                         <h3>Training Cost Calculator</h3>
                         <p>This POS System is used to monitor client training and determine costs.</p>
-                        <a href="https://github.com/Pasidu09-SL/Training-Cost-Calculator/tree/main" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/Pasidu09-SL/Training-Cost-Calculator" class="github"
+                            target="_blank"> <i class="fa-brands fa-square-github"></i></a>
+                        <!-- <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
                     </div>
                 </div>
                 <div class="work">
-                    <img src="/assets/projects/pos-system2.jpg">
+                    <img src="/assets/projects/pos-system2.jpg" alt="Store Billing System">
                     <div class="layer">
                         <h3>Store Billing System</h3>
                         <p>This is a store's POS billing system.It's still developing.</p>
-                        <a href="https://github.com/Pasidu09-SL/Store-Billing-System" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/Pasidu09-SL/Store-Billing-System" class="github" target="_blank"> <i
+                                class="fa-brands fa-square-github"></i></a>
+                        <!-- <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
                     </div>
                 </div>
             </div>
@@ -269,23 +293,32 @@
                     <div class="social-icons">
                         <a href="https://web.facebook.com/pasidu.sachintha.1/" class="facebook" target="_blank"> <i
                                 class="fa-brands fa-facebook"></i></a>
-                        <a href="https://x.com/MrPasiya0" class="twitter" target="_blank"> <i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://x.com/MrPasiya0" class="twitter" target="_blank"> <i
+                                class="fa-brands fa-square-x-twitter"></i></a>
                         <a href="https://www.instagram.com/mr.pasiya_a/" class="insta" target="_blank"><i
                                 class="fa-brands fa-square-instagram instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/pasidu-sachintha-982448288/" class="linkedin" target="_blank"> <i
-                                class="fa-brands fa-linkedin" ></i></a>
+                        <a href="https://www.linkedin.com/in/pasidu-sachintha-982448288/" class="linkedin"
+                            target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/Pasidu09-SL" class="github" target="_blank"> <i
                                 class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.figma.com/@pasidu" class="figma" target="_blank"> <i
+                                class="fa-brands fa-figma"></i> </a>
                     </div>
-                    <a href="/assets/personal/my-cv.pdf" download class="button">Download CV <i class="fa-solid fa-file-arrow-down"></i></a>
+                    <a href="/assets/personal/my-cv.pdf" download class="button">Download CV <i
+                            class="fa-solid fa-file-arrow-down"></i></a>
                 </div>
                 <div class="contact-right">
                     <form id="contact-form">
-                        <i class="fa-solid fa-user" style="color: var(--icon)"></i> <input type="text" name="Name" id="name" placeholder="Your Name" required >
-                        <i class="fa-solid fa-envelope" style="color: var(--icon)"></i><input type="email" name="Email" id="email" placeholder="Your Email" required>
-                        <i class="fa-solid fa-highlighter" style="color: var(--icon)"></i><input type="text" name="Subject" id="subject" placeholder="Subject">
-                        <i class="fa-regular fa-file-lines" style="color: var(--icon)"></i><textarea name="Message" rows="6" id="message" placeholder="Your Message" required></textarea>
-                        <button type="submit" class="button sub" onclick="restForm()">Submit <i class="fa-solid fa-paper-plane" style="font-size: 20px;"></i> </button>
+                        <i class="fa-solid fa-user" style="color: var(--icon)"></i> <input type="text" name="Name"
+                            id="name" placeholder="Your Name" required>
+                        <i class="fa-solid fa-envelope" style="color: var(--icon)"></i><input type="email" name="Email"
+                            id="email" placeholder="Your Email" required>
+                        <i class="fa-solid fa-highlighter" style="color: var(--icon)"></i><input type="text"
+                            name="Subject" id="subject" placeholder="Subject">
+                        <i class="fa-regular fa-file-lines" style="color: var(--icon)"></i><textarea name="Message"
+                            rows="6" id="message" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="button sub" onclick="restForm()">Submit <i
+                                class="fa-solid fa-paper-plane" style="font-size: 20px;"></i> </button>
                     </form>
                     <span id="msg"></span>
                 </div>
@@ -294,7 +327,7 @@
     </div>
 
     <footer>
-        <img src="/assets/icon/favicon.png">
+        <img src="/assets/icon/favicon.png" alt="Logo">
         <p class="copyright">copyright Made by Pasiya &copy; 2024</p>
     </footer>
     <a href="#header"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
