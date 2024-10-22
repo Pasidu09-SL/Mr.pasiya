@@ -194,6 +194,10 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: fixed;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+
 }
 
 .logo {
@@ -794,7 +798,7 @@ section {
     margin-top: 20px;
     color: var(--secondary);
     text-decoration: none;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 60px;
     background: white;
     width: 60px;
@@ -803,9 +807,7 @@ section {
     text-align: center;
     transition: transform 0.5s;
 }
-.layer a:last-child {
-    font-size: 18px;
-}
+
 .layer a:last-child:hover {
     transform: translateY(-5px);
 }
